@@ -3,7 +3,7 @@ import { DebugElement } from '@angular/core';
 
 import { HeadlineComponent } from './headline.component';
 import { By } from '@angular/platform-browser';
-fdescribe('HeadlineComponent', () => {
+describe('HeadlineComponent', () => {
   let component: HeadlineComponent;
   let fixture: ComponentFixture<HeadlineComponent>;
   let debugElement:DebugElement;
