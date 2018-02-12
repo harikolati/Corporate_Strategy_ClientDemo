@@ -6,7 +6,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { SearchboxComponent } from './searchbox/searchbox.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyDealsComponent } from './my-deals/my-deals.component';
@@ -16,9 +15,6 @@ import { LearninganddevelopmentComponent } from './learninganddevelopment/learni
 import { InitiativesComponent } from './initiatives/initiatives.component';
 import { QuickToolsComponent } from './quick-tools/quick-tools.component';
 import { AllToolsComponent } from './all-tools/all-tools.component';
-import { DealService } from './deal.service';
-import { FollowedDealService } from './followed-deal.service';
-import { InactiveDealService } from './inactive-deal.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeadlineComponent } from './headline/headline.component';
 
@@ -39,7 +35,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    SearchboxComponent, HeaderComponent, FooterComponent, MyDealsComponent, AllDealsComponent, MethodologyComponent, LearninganddevelopmentComponent, InitiativesComponent, QuickToolsComponent, AllToolsComponent, HeadlineComponent
+     HeaderComponent, FooterComponent, MyDealsComponent, AllDealsComponent, MethodologyComponent, LearninganddevelopmentComponent, InitiativesComponent, QuickToolsComponent, AllToolsComponent, HeadlineComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +43,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,HttpClientModule
   ],
-  providers: [DealService,FollowedDealService,InactiveDealService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
