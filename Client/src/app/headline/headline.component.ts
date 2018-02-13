@@ -5,6 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './headline.component.html',
   styleUrls: ['./headline.component.scss']
 })
+
+/**
+ * @class: HeadlineComponent
+ * To display the HeadlineComponent content
+ */
 export class HeadlineComponent implements OnInit {
 
   constructor() { }

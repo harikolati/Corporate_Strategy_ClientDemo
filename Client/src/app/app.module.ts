@@ -19,10 +19,7 @@ import { AllToolsComponent } from './all-tools/all-tools.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeadlineComponent } from './headline/headline.component';
 
-/**
- * Routing and navigation configurations
- */
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   
  { path: '', redirectTo : 'MyDeals', pathMatch : 'full'},
  { path: 'MyDeals', component: MyDealsComponent },
