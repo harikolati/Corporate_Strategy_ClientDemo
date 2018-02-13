@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +19,9 @@ import { AllToolsComponent } from './all-tools/all-tools.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeadlineComponent } from './headline/headline.component';
 
+/**
+ * Routing and navigation configurations
+ */
 const appRoutes: Routes = [
   
  { path: '', redirectTo : 'MyDeals', pathMatch : 'full'},
@@ -31,7 +35,9 @@ const appRoutes: Routes = [
 ];
 
 
-
+/**
+ * declarations of components
+ */
 @NgModule({
   declarations: [
     AppComponent,
